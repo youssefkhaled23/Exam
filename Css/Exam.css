@@ -1,0 +1,425 @@
+:root {
+    --Paragraph-Fs:3rem;
+    --First-Color:black;
+    --Secand-Color:white;
+    --Third-Color:#EEE;
+    --Fourth-Color:#869791;
+    --Button-Color:#DDD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/* Start Header */
+.header {
+    background-image: url(../img/bg.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.header-Content h1 {
+    font-size: var(--Paragraph-Fs);
+}
+
+.header-Content h2::after {
+    content: "|";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: var(--Paragraph-Fs);
+    font-weight: 100;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    animation: Youssef 8s alternate infinite;
+    -webkit-animation: Youssef 8s alternate infinite;
+}
+
+@keyframes Youssef {
+    0% {
+      content: "Free";
+    }
+    2% {
+      content: "Fre|";
+    }
+    4% {
+      content: "Fr";
+    }
+    6% {
+      content: "F";
+    }
+    8% {
+      content: "|";
+    }
+    10% {
+      content: "";
+    }
+    12% {
+      content: "S|";
+    }
+    14% {
+      content: "Se";
+    }
+    16% {
+      content: "Sen|";
+    }
+    18% {
+      content: "Seni";
+    }
+    20% {
+      content: "Senio|";
+    }
+    22% {
+      content: "Senior";
+    }
+    24% {
+      content: "Senior|";
+    }
+    26% {
+      content: "SeniorF";
+    }
+    28% {
+      content: "SeniorFr|";
+    }
+    30% {
+      content: "SeniorFro";
+    }
+    32% {
+      content: "SeniorFron|";
+    }
+    34% {
+      content: "SeniorFront";
+    }
+  
+    36% {
+      content: "SeniorFront|";
+    }
+    38% {
+      content: "SeniorFronte";
+    }
+    40% {
+      content: "SeniorFronten|";
+    }
+    42% {
+      content: "SeniorFrontend";
+    }
+    44% {
+      content: "SeniorFront|";
+    }
+    46% {
+      content: "SeniorFron";
+    }
+    48% {
+      content: "SeniorFro|";
+    }
+    50% {
+      content: "SeniorFr";
+    }
+    52% {
+      content: "SeniorF|";
+    }
+    54% {
+      content: "Senior";
+    }
+    56% {
+      content: "Senior|";
+    }
+    58% {
+      content: "";
+    }
+    60% {
+      content: "Y|";
+    }
+    62% {
+      content: "Yo";
+    }
+    64% {
+      content: "You|";
+    }
+    66% {
+      content: "Youss";
+    }
+    68% {
+      content: "Youssef|";
+    }
+    70% {
+      content: "Youssef|";
+    }
+    72% {
+      content: "YoussefK|";
+    }
+    74% {
+      content: "YoussefKh|";
+    }
+    76% {
+      content: "YoussefKha|";
+    }
+    78% {
+      content: "YoussefKhale";
+    }
+    80% {
+      content: "YoussefKhaled|";
+    }
+    84% {
+      content: "YoussefKhale|";
+    }
+    86% {
+      content: "YoussefKhal";
+    }
+    88% {
+      content: "YoussefKha|";
+    }
+    90% {
+      content: "YoussefKh";
+    }
+    92% {
+      content: "Youssef|";
+    }
+    94% {
+      content: "Yousse";
+    }
+    96% {
+      content: "Youss|";
+    }
+    98% {
+      content: "Yous";
+    }
+    100% {
+      content: "You|";
+    }
+  }
+
+.Icons {
+    width:35px;
+    height: 35px;
+}
+/* End Header */
+/* Start Section-1 */
+.Section2-Content p span {
+    color: #6c757d;
+}
+
+.progress {
+    height: 25px;
+}
+
+.progress-bar {
+    background-color: var(--First-Color);
+}
+
+.progress-bar::before {
+    content: attr(data-progress);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--Secand-Color); 
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.progress-bar::after {
+    content: attr(data-progress-2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--Secand-Color); 
+    margin-right: 5px;
+    margin-top: 3px;
+} 
+
+.Cv-Button,
+.contact-button:hover {
+    background-color: var(--First-Color);
+    color: var(--Secand-Color);
+}
+
+.Cv-Button:hover {
+    color: var(--Buuton-Color);
+}
+/* End Section-1 */
+/* Start Section-2 */
+.Section2-Text h2 {
+    font-size: var(--Paragraph-Fs);
+}
+
+.Contain-2 {
+    background-color: var(--Secand-Color);
+}
+
+.Icon-2 {
+    width: 65px;
+    height: 65px;
+    background-color: var(--Third-Color);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.Contain-2:hover .Icon-2{
+    background-color: var(--First-Color);
+    color: var(--Secand-Color);
+    cursor: pointer;
+}
+/* End Section-2 */
+/* Start Section-3 */
+.Section3-Text h2 {
+    font-size: var(--Paragraph-Fs);
+}
+
+.nav .nav-item .nav-link:focus,
+.nav .nav-item .nav-link.active  {
+    border-bottom: 2px solid var(--First-Color);
+}  
+
+.Icon-3 {
+  width: 35px;
+  height: 35px;
+  color: white;
+  background-color: var(--First-Color);
+  border: 1px solid var(--First-Color);
+}
+
+.Icon-3:hover {
+  color: var(--First-Color);
+  background-color: var(--Secand-Color);
+}
+
+.Contain3-layer,
+.Text-P,
+.layer-Icons {
+  opacity: 0;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.Contain-3:hover .Contain3-layer,
+.Contain-3:hover .Text-P ,
+.Contain-3:hover .layer-Icons {
+  opacity: 1;
+}
+
+.Contain-3:hover .Contain3-layer {
+  border: 8px solid var(--Third-Color);
+}
+/* End Section-3 */
+/* Start Section-4 */
+.Section4-Text h2 {
+  font-size: var(--Paragraph-Fs);
+}
+
+.carousel-indicators .Next {
+  width: 20px;
+  height: 20px;
+  background-color: var(--Fourth-Color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* End Section-4 */
+/* Start Section-6 */
+.Section-6-Text h2 {
+  font-size: var(--Paragraph-Fs);
+}
+
+.P {
+  color: #2F2F2F;
+}
+
+.carousel-indicators .Next-1 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--Fourth-Color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.Contain-6 img {
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.Contain-6 img:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+/* End Section-6 */
+/* Start Section-7 */
+.Section7-Text h2 {
+  font-size: var(--Paragraph-Fs);
+}
+
+.Icon-4 {
+  width: 60px;
+  height: 60px;
+  background-color: var(--First-Color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--Secand-Color);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.Icon-4:hover {
+  background-color: #EEE;
+  color: black;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea{
+  background-color: #F4F4F4;
+  border: none;
+  height: 40px;
+}
+
+.contact form textarea {
+  height: 250px;
+}
+
+.Input {
+  width: 90%;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  padding: 10px;
+}
+
+.contact a {
+  background-color: var(--First-Color);
+  color: var(--Secand-Color);
+}
+
+.contact a:hover {
+  border: 1px solid var(--First-Color);
+  color: var(--Button-Color);
+}
+/* End Section-7 */
